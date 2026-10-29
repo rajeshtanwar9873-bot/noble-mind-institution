@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Noble Mind Institution | Coaching Portal</title>
+<style>
+:root{--navy:#13233f;--blue:#315be8;--blue2:#edf2ff;--ink:#19243a;--muted:#718096;--bg:#f5f7fb;--line:#e7ebf3;--green:#16865b;--amber:#b87512;--red:#c34343}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--ink)}button,input,select{font:inherit}button{cursor:pointer}.app{min-height:100vh;display:grid;grid-template-columns:245px 1fr}.sidebar{background:var(--navy);color:#fff;padding:25px 16px;display:flex;flex-direction:column;gap:28px}.brand{display:flex;gap:11px;align-items:center;padding:0 8px}.logo{width:43px;height:43px;border-radius:14px;background:#fff;color:var(--blue);display:grid;place-items:center;font-weight:900;font-size:19px}.brand h1{font-size:15px;line-height:1.25;margin:0}.brand p{font-size:11px;color:#aebbd3;margin:4px 0 0}.nav-label{font-size:10px;letter-spacing:1.6px;color:#8d9bb5;padding:0 12px;margin-bottom:7px}.nav{display:grid;gap:5px}.nav button{border:0;background:transparent;color:#c9d3e4;text-align:left;padding:12px;border-radius:10px;display:flex;gap:12px;align-items:center;font-size:13px}.nav button.active,.nav button:hover{background:#263a5e;color:white}.nav .ico{width:19px;text-align:center;font-size:16px}.side-note{margin-top:auto;border:1px solid #344765;background:#1b2d4d;border-radius:13px;padding:14px;font-size:12px;color:#d2dbee;line-height:1.5}.side-note strong{display:block;color:#fff;margin-bottom:5px}.main{min-width:0}.topbar{height:76px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 32px;gap:14px}.crumb{font-size:12px;color:var(--muted)}.crumb strong{color:var(--ink)}.top-actions{display:flex;align-items:center;gap:13px}.today{font-size:12px;color:var(--muted)}.avatar{width:38px;height:38px;background:var(--blue2);color:var(--blue);border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:12px}.content{padding:28px 32px;max-width:1450px;margin:auto}.welcome{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-bottom:24px}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--blue);font-weight:800}.welcome h2{margin:7px 0 5px;font-size:27px;letter-spacing:-.7px}.welcome p{margin:0;color:var(--muted);font-size:13px}.btn{border:0;border-radius:10px;background:var(--blue);color:white;padding:11px 15px;font-size:12px;font-weight:700;box-shadow:0 5px 12px #315be824}.btn.secondary{background:#fff;border:1px solid var(--line);color:var(--ink);box-shadow:none}.btn.small{padding:8px 11px;font-size:11px}.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin-bottom:20px}.stat{background:white;border:1px solid var(--line);border-radius:15px;padding:18px;min-width:0}.stat-head{display:flex;align-items:center;justify-content:space-between;color:var(--muted);font-size:12px}.stat-icon{width:34px;height:34px;border-radius:10px;background:var(--blue2);display:grid;place-items:center;font-size:17px}.stat-value{font-size:27px;font-weight:800;letter-spacing:-.8px;margin:13px 0 5px}.stat-foot{font-size:11px;color:var(--muted)}.stat-foot .positive{color:var(--green);font-weight:700}.grid2{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(270px,1fr);gap:18px}.panel{background:#fff;border:1px solid var(--line);border-radius:15px;padding:20px;margin-bottom:18px;min-width:0}.panel-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px}.panel-head h3{font-size:15px;margin:0}.panel-head p{font-size:11px;color:var(--muted);margin:5px 0 0}.link{border:0;background:transparent;color:var(--blue);font-size:11px;font-weight:700}.bars{display:flex;align-items:end;gap:15px;height:170px;padding:6px 4px 0}.bar-col{flex:1;display:flex;align-items:center;justify-content:end;flex-direction:column;height:100%;gap:8px}.bar{width:min(38px,70%);min-height:6px;background:#dce5ff;border-radius:7px 7px 3px 3px;position:relative}.bar.current{background:var(--blue)}.bar-label{font-size:10px;color:var(--muted)}.bar-value{font-size:10px;color:var(--muted)}.activity{display:grid;gap:16px}.activity-item{display:flex;gap:12px;align-items:flex-start}.activity-icon{width:35px;height:35px;flex-shrink:0;border-radius:10px;background:#f0f4ff;display:grid;place-items:center}.activity-item strong{font-size:12px;display:block;margin:1px 0 4px}.activity-item span{font-size:11px;color:var(--muted);line-height:1.45}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;white-space:nowrap}th{text-align:left;padding:11px 12px;background:#f8faff;color:var(--muted);font-size:10px;font-weight:700;border-bottom:1px solid var(--line)}td{padding:13px 12px;border-bottom:1px solid #edf0f6;font-size:12px}tbody tr:last-child td{border-bottom:0}.student{display:flex;align-items:center;gap:10px}.student-avatar{width:31px;height:31px;border-radius:10px;background:#edf2ff;color:#315be8;display:grid;place-items:center;font-size:10px;font-weight:800}.student small{display:block;color:var(--muted);margin-top:3px;font-size:10px}.pill{display:inline-flex;padding:5px 8px;border-radius:20px;font-size:10px;font-weight:700;background:#eaf8f0;color:var(--green)}.pill.pending{background:#fff4df;color:var(--amber)}.pill.absent{background:#ffeded;color:var(--red)}.page-title{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px}.page-title h2{font-size:24px;margin:0 0 6px}.page-title p{font-size:12px;color:var(--muted);margin:0}.toolbar{display:flex;gap:10px;margin-bottom:15px;flex-wrap:wrap}.field{border:1px solid var(--line);background:#fff;padding:10px 12px;border-radius:9px;font-size:12px;min-width:150px;outline-color:var(--blue)}.search{flex:1;min-width:180px}.empty{text-align:center;padding:35px 15px;color:var(--muted);font-size:12px}.material-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.material{border:1px solid var(--line);border-radius:13px;padding:17px}.fileicon{width:42px;height:42px;border-radius:12px;background:#edf2ff;display:grid;place-items:center;font-size:20px;margin-bottom:14px}.material h4{font-size:13px;margin:0 0 6px}.material p{font-size:11px;color:var(--muted);margin:0 0 14px;line-height:1.5}.material .link{padding:0}.notice{background:#f1f5ff;border:1px solid #dfe7ff;border-radius:12px;padding:14px;font-size:12px;line-height:1.55;color:#405174;margin-bottom:18px}.notice strong{color:#1e3e9a}.hidden{display:none!important}.modal-backdrop{position:fixed;inset:0;background:#0c193b70;display:grid;place-items:center;padding:20px;z-index:5}.modal{width:min(460px,100%);background:white;border-radius:17px;padding:23px;box-shadow:0 20px 60px #07132b30}.modal h3{margin:0 0 6px;font-size:18px}.modal p{margin:0 0 18px;color:var(--muted);font-size:12px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.form-field{display:grid;gap:6px}.form-field.full{grid-column:1/-1}.form-field label{font-size:11px;color:#59657a;font-weight:700}.form-field input,.form-field select{width:100%;border:1px solid var(--line);border-radius:9px;padding:11px;font-size:12px}.modal-actions{display:flex;justify-content:flex-end;gap:9px;margin-top:20px}.toast{position:fixed;bottom:20px;right:20px;background:#142644;color:white;padding:13px 17px;border-radius:11px;font-size:12px;box-shadow:0 8px 25px #0002;z-index:8}.mobile-menu{display:none}.footer{font-size:10px;color:#97a1b2;text-align:center;padding:10px 0 25px}
+@media(max-width:1050px){.app{grid-template-columns:210px 1fr}.content{padding:23px 20px}.topbar{padding:0 20px}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.material-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){.app{display:block}.sidebar{display:none;position:fixed;inset:0 auto 0 0;width:255px;z-index:10;box-shadow:15px 0 35px #06132b40}.sidebar.open{display:flex}.topbar{height:65px;padding:0 15px}.mobile-menu{display:inline-grid;place-items:center;border:0;background:#f0f3fa;border-radius:9px;width:35px;height:35px}.top-actions .today{display:none}.content{padding:22px 14px}.welcome{align-items:flex-start;flex-direction:column}.welcome h2{font-size:24px}.cards{gap:10px}.stat{padding:14px}.stat-value{font-size:24px}.stat-head{font-size:10px}.grid2{grid-template-columns:1fr}.material-grid{grid-template-columns:1fr}.panel{padding:15px}.page-title h2{font-size:21px}.form-grid{grid-template-columns:1fr}.form-field.full{grid-column:auto}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar" id="sidebar">
+ <div class="brand"><div class="logo">NM</div><div><h1>NOBLE MIND<br>INSTITUTION</h1><p>LEARN · GROW · EXCEL</p></div></div>
+ <div><div class="nav-label">MAIN MENU</div><nav class="nav" id="nav">
+ <button class="active" data-page="dashboard"><span class="ico">▦</span>Dashboard</button>
+ <button data-page="students"><span class="ico">♙</span>Students</button>
+ <button data-page="attendance"><span class="ico">✓</span>Attendance</button>
+ <button data-page="fees"><span class="ico">₹</span>Fee Management</button>
+ <button data-page="materials"><span class="ico">▤</span>Study Material</button>
+ <button data-page="tests"><span class="ico">✎</span>Tests & Results</button>
+ </nav></div>
+ <div class="side-note"><strong>✦ Your teaching, organised.</strong>One place for student records, class resources and progress. This is a local demo prototype.</div>
+</aside>
+<main class="main">
+ <header class="topbar"><div style="display:flex;align-items:center;gap:12px"><button class="mobile-menu" id="menuBtn" aria-label="Open menu">☰</button><div class="crumb">Noble Mind / <strong id="crumb">Dashboard</strong></div></div><div class="top-actions"><span class="today" id="dateText"></span><div class="avatar">NM</div></div></header>
+ <div class="content">
+ <section id="dashboardPage">
+  <div class="welcome"><div><div class="eyebrow">INSTITUTE OVERVIEW</div><h2>Good evening, Admin 👋</h2><p>Here's what's happening at Noble Mind Institution today.</p></div><button class="btn" id="addStudentTop">＋ Add new student</button></div>
+  <div class="cards" id="stats"></div>
+  <div class="grid2">
+   <div class="panel"><div class="panel-head"><div><h3>Fee collection overview</h3><p>Illustrative monthly collection (₹)</p></div><span class="pill">Demo data</span></div><div class="bars" id="feeBars"></div></div>
+   <div class="panel"><div class="panel-head"><div><h3>Quick overview</h3><p>Keep an eye on daily priorities</p></div></div><div class="activity" id="quickActivity"></div></div>
+  </div>
+  <div class="panel"><div class="panel-head"><div><h3>Recently added students</h3><p>Your latest student records</p></div><button class="link" data-goto="students">View all students →</button></div><div class="table-wrap"><table><thead><tr><th>STUDENT</th><th>CLASS</th><th>PHONE</th><th>FEE STATUS</th></tr></thead><tbody id="recentRows"></tbody></table></div></div>
+ </section>
+ <section id="studentsPage" class="hidden">
+  <div class="page-title"><div><h2>Students</h2><p>Manage student details and class enrolments.</p></div><button class="btn" id="addStudentBtn">＋ Add student</button></div>
+  <div class="notice"><strong>Prototype note:</strong> Student entries are saved in this browser on this device. They are not synced to other devices.</div>
+  <div class="toolbar"><input class="field search" id="studentSearch" placeholder="Search by student name or phone…"><select class="field" id="classFilter"><option value="">All classes</option></select></div>
+  <div class="panel"><div class="table-wrap"><table><thead><tr><th>STUDENT</th><th>CLASS</th><th>GUARDIAN PHONE</th><th>MONTHLY FEE</th><th>FEE STATUS</th><th>ACTION</th></tr></thead><tbody id="studentsRows"></tbody></table></div></div>
+ </section>
+ <section id="attendancePage" class="hidden">
+  <div class="page-title"><div><h2>Attendance</h2><p>Mark today's attendance for each student.</p></div><button class="btn" id="saveAttendance">Save attendance</button></div>
+  <div class="toolbar"><input class="field" type="date" id="attendanceDate"><select class="field" id="attendanceClass"><option value="">All classes</option></select></div>
+  <div class="panel"><div class="panel-head"><div><h3>Daily register</h3><p id="attendanceCount">Mark students present or absent.</p></div><div style="display:flex;gap:8px"><button class="btn secondary small" id="allPresent">All present</button></div></div><div class="table-wrap"><table><thead><tr><th>STUDENT</th><th>CLASS</th><th>STATUS</th></tr></thead><tbody id="attendanceRows"></tbody></table></div></div>
+ </section>
+ <section id="feesPage" class="hidden">
+  <div class="page-title"><div><h2>Fee management</h2><p>Track monthly fees and payment status.</p></div><button class="btn" id="recordFeeBtn">＋ Record payment</button></div>
+  <div class="cards" id="feeStats"></div><div class="toolbar"><input class="field search" id="feeSearch" placeholder="Search student…"><select class="field" id="feeFilter"><option value="">All statuses</option><option value="Paid">Paid</option><option value="Pending">Pending</option></select></div>
+  <div class="panel"><div class="table-wrap"><table><thead><tr><th>STUDENT</th><th>CLASS</th><th>MONTHLY FEE</th><th>STATUS</th><th>ACTION</th></tr></thead><tbody id="feesRows"></tbody></table></div></div>
+ </section>
+ <section id="materialsPage" class="hidden">
+  <div class="page-title"><div><h2>Study material</h2><p>Organise notes, worksheets and homework for Classes 1–12.</p></div><button class="btn" id="addMaterialBtn">＋ Add material</button></div>
+  <div class="notice"><strong>Tip:</strong> Add a title and a PDF link from Google Drive or another source. This demo stores the link; it does not upload files itself.</div>
+  <div class="toolbar"><select class="field" id="materialClass"><option value="">All classes</option></select><select class="field" id="materialSubject"><option value="">All subjects</option><option>Mathematics</option><option>Science</option><option>English</option><option>Hindi</option><option>Social Science</option><option>Computer</option><option>Other</option></select></div>
+  <div class="material-grid" id="materialGrid"></div>
+ </section>
+ <section id="testsPage" class="hidden">
+  <div class="page-title"><div><h2>Tests & results</h2><p>Create a simple record of classroom tests and marks.</p></div><button class="btn" id="addTestBtn">＋ Add result</button></div>
+  <div class="notice"><strong>Coming in a future version:</strong> timed online MCQ tests, automatic marking and student logins. This prototype records marks entered by the admin.</div>
+  <div class="panel"><div class="table-wrap"><table><thead><tr><th>STUDENT</th><th>CLASS</th><th>TEST / SUBJECT</th><th>MARKS</th><th>DATE</th></tr></thead><tbody id="testsRows"></tbody></table></div></div>
+ </section>
+ <div class="footer">Noble Mind Institution · Prototype v1.0 · Sample records are for demonstration only</div>
+ </div>
+</main>
+</div>
+<div id="modalRoot"></div><div id="toastRoot"></div>
+<script>
+const $=s=>document.querySelector(s);
+const today=new Date();const dateKey=d=>{const x=new Date(d);return `${x.getFullYear()}-${String(x.getMonth()+1).padStart(2,'0')}-${String(x.getDate()).padStart(2,'0')}`};
+$('#dateText').textContent=today.toLocaleDateString('en-IN',{weekday:'short',day:'numeric',month:'short',year:'numeric'});
+const seedStudents=[
+{id:1,name:'Aarav Sharma',cls:'Class 10',phone:'98XXXXXX21',fee:1800,status:'Paid'},
+{id:2,name:'Ananya Verma',cls:'Class 8',phone:'97XXXXXX42',fee:1500,status:'Pending'},
+{id:3,name:'Vivaan Singh',cls:'Class 12',phone:'99XXXXXX13',fee:2200,status:'Paid'},
+{id:4,name:'Diya Gupta',cls:'Class 6',phone:'96XXXXXX54',fee:1200,status:'Pending'},
+{id:5,name:'Arjun Kumar',cls:'Class 9',phone:'95XXXXXX65',fee:1600,status:'Paid'},
+{id:6,name:'Meera Yadav',cls:'Class 5',phone:'94XXXXXX76',fee:1000,status:'Paid'}
+];
+function load(key,fallback){try{const x=localStorage.getItem('nmi_'+key);return x?JSON.parse(x):fallback}catch(e){return fallback}}
+function save(key,val){try{localStorage.setItem('nmi_'+key,JSON.stringify(val))}catch(e){}}
+let students=load('students',seedStudents),materials=load('materials',[
+{id:1,title:'Fractions & Decimals',cls:'Class 6',subject:'Mathematics',kind:'Worksheet',url:''},
+{id:2,title:'Light — Revision Notes',cls:'Class 10',subject:'Science',kind:'Notes',url:''},
+{id:3,title:'Grammar Practice Set 01',cls:'Class 8',subject:'English',kind:'Practice',url:''}
+]),tests=load('tests',[
+{id:1,studentId:1,subject:'Mathematics — Unit Test',marks:18,total:20,date:dateKey(today)},
+{id:2,studentId:3,subject:'Physics — Chapter Test',marks:42,total:50,date:dateKey(today)}
+]),attendance=load('attendance',{});
+let nextId=()=>Math.max(0,...students.map(s=>s.id),...materials.map(m=>m.id),...tests.map(t=>t.id))+1;
+const initials=n=>n.split(' ').map(p=>p[0]).slice(0,2).join('').toUpperCase();
+const money=n=>'₹'+Number(n||0).toLocaleString('en-IN');
+const safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function pill(status){return `<span class="pill ${status==='Pending'?'pending':status==='Absent'?'absent':''}">${safe(status)}</span>`}
+function studentCell(s){return `<div class="student"><div class="student-avatar">${initials(s.name)}</div><div><strong>${safe(s.name)}</strong><small>ID: NMI-${String(s.id).padStart(3,'0')}</small></div></div>`}
+function classes(){return [...new Set([...Array.from({length:12},(_,i)=>`Class ${i+1}`),...students.map(s=>s.cls)])].sort((a,b)=>Number(a.replace(/\D/g,''))-Number(b.replace(/\D/g,'')))}
+function fillClassOptions(){['classFilter','attendanceClass','materialClass'].forEach(id=>{const el=$('#'+id);if(!el)return;const old=el.value;el.innerHTML='<option value="">All classes</option>'+classes().map(c=>`<option>${safe(c)}</option>`).join('');el.value=old})}
+function statCard(label,value,icon,foot){return `<div class="stat"><div class="stat-head"><span>${label}</span><span class="stat-icon">${icon}</span></div><div class="stat-value">${value}</div><div class="stat-foot">${foot}</div></div>`}
+function renderDashboard(){
+const paid=students.filter(s=>s.status==='Paid').reduce((n,s)=>n+Number(s.fee),0),pending=students.filter(s=>s.status==='Pending').reduce((n,s)=>n+Number(s.fee),0);
+$('#stats').innerHTML=statCard('Total students',students.length,'♙','<span class="positive">●</span> Enrolled records')+statCard('Fees collected',money(paid),'₹','From students marked paid')+statCard('Pending fees',money(pending),'◷','Students needing follow-up')+statCard('Study resources',materials.length,'▤','Notes and worksheets');
+const vals=[35,48,42,66,55,80,71,92,65,75,87,100],months=['Nov','Dec','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct'];
+$('#feeBars').innerHTML=vals.map((v,i)=>`<div class="bar-col"><span class="bar-value">${i===11?'Now':''}</span><div class="bar ${i===11?'current':''}" style="height:${v}%"></div><span class="bar-label">${months[i]}</span></div>`).join('');
+$('#quickActivity').innerHTML=`<div class="activity-item"><div class="activity-icon">♙</div><div><strong>${students.length} student records</strong><span>Manage enrolments and contact details.</span></div></div><div class="activity-item"><div class="activity-icon">₹</div><div><strong>${students.filter(s=>s.status==='Pending').length} pending fee records</strong><span>${money(pending)} shown as pending in this demo.</span></div></div><div class="activity-item"><div class="activity-icon">✓</div><div><strong>Attendance register</strong><span>Mark and save attendance for any date.</span></div></div><div class="activity-item"><div class="activity-icon">✎</div><div><strong>${tests.length} test results</strong><span>Record marks and review performance.</span></div></div>`;
+$('#recentRows').innerHTML=students.slice(-4).reverse().map(s=>`<tr><td>${studentCell(s)}</td><td>${safe(s.cls)}</td><td>${safe(s.phone||'—')}</td><td>${pill(s.status)}</td></tr>`).join('')||'<tr><td colspan="4" class="empty">No students yet. Add your first student.</td></tr>';
+}
+function renderStudents(){
+fillClassOptions();const q=($('#studentSearch').value||'').toLowerCase(),cl=$('#classFilter').value;
+const list=students.filter(s=>(s.name.toLowerCase().includes(q)||(s.phone||'').toLowerCase().includes(q))&&(!cl||s.cls===cl));
+$('#studentsRows').innerHTML=list.map(s=>`<tr><td>${studentCell(s)}</td><td>${safe(s.cls)}</td><td>${safe(s.phone||'—')}</td><td>${money(s.fee)}</td><td>${pill(s.status)}</td><td><button class="link" data-edit="${s.id}">Edit</button> <button class="link" data-delete="${s.id}" style="color:#c34343">Delete</button></td></tr>`).join('')||'<tr><td colspan="6" class="empty">No matching students found.</td></tr>';
+}
+function renderAttendance(){
+fillClassOptions();const day=$('#attendanceDate').value||dateKey(today),cl=$('#attendanceClass').value,rec=attendance[day]||{};
+const list=students.filter(s=>!cl||s.cls===cl);
+$('#attendanceRows').innerHTML=list.map(s=>{const st=rec[s.id]||'Present';return `<tr><td>${studentCell(s)}</td><td>${safe(s.cls)}</td><td><select class="field att-select" data-att="${s.id}"><option ${st==='Present'?'selected':''}>Present</option><option ${st==='Absent'?'selected':''}>Absent</option><option ${st==='Leave'?'selected':''}>Leave</option></select></td></tr>`}).join('')||'<tr><td colspan="3" class="empty">Add students to begin taking attendance.</td></tr>';
+$('#attendanceCount').textContent=`${list.length} student(s) in this register · ${day}`;
+}
+function renderFees(){
+const paid=students.filter(s=>s.status==='Paid').reduce((n,s)=>n+Number(s.fee),0),pending=students.filter(s=>s.status==='Pending').reduce((n,s)=>n+Number(s.fee),0);
+$('#feeStats').innerHTML=statCard('Collected',money(paid),'₹','Marked paid')+statCard('Pending',money(pending),'◷','Marked pending')+statCard('Students',students.length,'♙','All enrolled records')+statCard('Pending count',students.filter(s=>s.status==='Pending').length,'!','Needs follow-up');
+const q=($('#feeSearch').value||'').toLowerCase(),f=$('#feeFilter').value;
+$('#feesRows').innerHTML=students.filter(s=>s.name.toLowerCase().includes(q)&&(!f||s.status===f)).map(s=>`<tr><td>${studentCell(s)}</td><td>${safe(s.cls)}</td><td>${money(s.fee)}</td><td>${pill(s.status)}</td><td><button class="btn secondary small" data-togglefee="${s.id}">${s.status==='Paid'?'Mark pending':'Mark paid'}</button></td></tr>`).join('')||'<tr><td colspan="5" class="empty">No matching fee records.</td></tr>';
+}
+function renderMaterials(){
+fillClassOptions();const cl=$('#materialClass').value,sub=$('#materialSubject').value;
+const list=materials.filter(m=>(!cl||m.cls===cl)&&(!sub||m.subject===sub));
+$('#materialGrid').innerHTML=list.map(m=>`<div class="material"><div class="fileicon">${m.kind==='Worksheet'?'▧':m.kind==='Homework'?'✎':'▤'}</div><h4>${safe(m.title)}</h4><p>${safe(m.cls)} · ${safe(m.subject)}<br>${safe(m.kind)}</p>${m.url?`<a class="link" href="${safe(m.url)}" target="_blank" rel="noopener">Open resource ↗</a>`:'<span style="font-size:11px;color:#97a1b2">No resource link added</span>'} <button class="link" data-deletemat="${m.id}" style="float:right;color:#c34343">Remove</button></div>`).join('')||'<div class="empty">No material in this category yet.</div>';
+}
+function renderTests(){$('#testsRows').innerHTML=tests.slice().reverse().map(t=>{const s=students.find(s=>s.id===t.studentId);return `<tr><td>${s?studentCell(s):'Student removed'}</td><td>${s?safe(s.cls):'—'}</td><td>${safe(t.subject)}</td><td><strong>${t.marks}/${t.total}</strong> <span style="color:#718096">(${t.total?Math.round(t.marks/t.total*100):0}%)</span></td><td>${safe(t.date)}</td></tr>`}).join('')||'<tr><td colspan="5" class="empty">No results recorded yet.</td></tr>'}
+function renderAll(){renderDashboard();renderStudents();renderAttendance();renderFees();renderMaterials();renderTests()}
+const pages=['dashboard','students','attendance','fees','materials','tests'];
+function gotoPage(p){pages.forEach(x=>$('#'+x+'Page').classList.toggle('hidden',x!==p));$('#crumb').textContent=({dashboard:'Dashboard',students:'Students',attendance:'Attendance',fees:'Fee Management',materials:'Study Material',tests:'Tests & Results'})[p];document.querySelectorAll('#nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===p));$('#sidebar').classList.remove('open');if(p==='students')renderStudents();if(p==='attendance')renderAttendance();if(p==='fees')renderFees();if(p==='materials')renderMaterials();if(p==='tests')renderTests()}
+$('#nav').addEventListener('click',e=>{const b=e.target.closest('[data-page]');if(b)gotoPage(b.dataset.page)});
+document.addEventListener('click',e=>{const g=e.target.closest('[data-goto]');if(g)gotoPage(g.dataset.goto)});
+$('#menuBtn').onclick=()=>$('#sidebar').classList.toggle('open');
+function toast(msg){$('#toastRoot').innerHTML=`<div class="toast">${safe(msg)}</div>`;setTimeout(()=>$('#toastRoot').innerHTML='',2600)}
+function openModal(title,desc,fields,onSave){
+const body=fields.map(f=>`<div class="form-field ${f.full?'full':''}"><label>${f.label}</label>${f.options?`<select name="${f.name}" ${f.required?'required':''}>${f.options.map(o=>`<option value="${safe(o.value??o)}">${safe(o.label??o)}</option>`).join('')}</select>`:`<input name="${f.name}" type="${f.type||'text'}" placeholder="${safe(f.placeholder||'')}" ${f.required?'required':''} ${f.min!==undefined?'min="'+f.min+'"':''} ${f.step?'step="'+f.step+'"':''}>`}</div>`).join('');
+$('#modalRoot').innerHTML=`<div class="modal-backdrop"><div class="modal"><h3>${title}</h3><p>${desc}</p><form id="modalForm"><div class="form-grid">${body}</div><div class="modal-actions"><button type="button" class="btn secondary" id="cancelModal">Cancel</button><button class="btn" type="submit">Save</button></div></form></div></div>`;
+$('#cancelModal').onclick=()=>$('#modalRoot').innerHTML='';
+$('#modalRoot').querySelector('.modal-backdrop').addEventListener('click',e=>{if(e.target.classList.contains('modal-backdrop'))$('#modalRoot').innerHTML=''});
+$('#modalForm').onsubmit=e=>{e.preventDefault();const data=Object.fromEntries(new FormData(e.target).entries());onSave(data);$('#modalRoot').innerHTML='';save('students',students);save('materials',materials);save('tests',tests);save('attendance',attendance);renderAll();toast('Saved successfully in this browser.')};
+}
+function studentFields(s={}){return [
+{label:'Student full name',name:'name',placeholder:'e.g. Riya Sharma',required:true},
+{label:'Class',name:'cls',options:classes().map(c=>({value:c,label:c})),required:true},
+{label:'Guardian phone',name:'phone',placeholder:'Mobile number'},
+{label:'Monthly fee (₹)',name:'fee',type:'number',min:0,step:'50',placeholder:'1500',required:true},
+{label:'Fee status',name:'status',options:['Paid','Pending']},
+];}
+function addStudent(){openModal('Add student','Enter the student details below.',studentFields(),d=>{students.push({id:nextId(),name:d.name.trim(),cls:d.cls,phone:d.phone.trim(),fee:Number(d.fee),status:d.status});save('students',students);renderAll()})}
+$('#addStudentBtn').onclick=addStudent;$('#addStudentTop').onclick=()=>{gotoPage('students');addStudent()};
+document.addEventListener('click',e=>{
+const ed=e.target.closest('[data-edit]');if(ed){const s=students.find(x=>x.id===Number(ed.dataset.edit));if(!s)return;openModal('Edit student','Update this student’s details.',studentFields(s),d=>{Object.assign(s,{name:d.name.trim(),cls:d.cls,phone:d.phone.trim(),fee:Number(d.fee),status:d.status});renderAll()})}
+const del=e.target.closest('[data-delete]');if(del){const s=students.find(x=>x.id===Number(del.dataset.delete));if(s&&confirm(`Delete ${s.name} from this browser's demo records?`)){students=students.filter(x=>x.id!==s.id);renderAll();save('students',students);toast('Student deleted.')}} 
+const tf=e.target.closest('[data-togglefee]');if(tf){const s=students.find(x=>x.id===Number(tf.dataset.togglefee));if(s){s.status=s.status==='Paid'?'Pending':'Paid';save('students',students);renderAll();toast('Fee status updated.')}} 
+const dm=e.target.closest('[data-deletemat]');if(dm&&confirm('Remove this material card?')){materials=materials.filter(m=>m.id!==Number(dm.dataset.deletemat));save('materials',materials);renderAll();toast('Material removed.')}
+});
+$('#studentSearch').oninput=renderStudents;$('#classFilter').onchange=renderStudents;$('#feeSearch').oninput=renderFees;$('#feeFilter').onchange=renderFees;
+$('#attendanceDate').value=dateKey(today);$('#attendanceDate').onchange=renderAttendance;$('#attendanceClass').onchange=renderAttendance;
+$('#allPresent').onclick=()=>{document.querySelectorAll('.att-select').forEach(s=>s.value='Present')};
+$('#saveAttendance').onclick=()=>{const day=$('#attendanceDate').value||dateKey(today);attendance[day]=attendance[day]||{};document.querySelectorAll('.att-select').forEach(el=>attendance[day][el.dataset.att]=el.value);save('attendance',attendance);toast('Attendance saved for '+day);};
+$('#recordFeeBtn').onclick=()=>{if(!students.length){toast('Add a student first.');return}openModal('Record fee payment','Choose the student and update their payment status.',[{label:'Student',name:'studentId',options:students.map(s=>({value:s.id,label:s.name+' — '+s.cls}))},{label:'Payment status',name:'status',options:['Paid','Pending']},{label:'Amount received (₹)',name:'amount',type:'number',min:0,step:'1',placeholder:'1500',required:true},{label:'Payment date',name:'date',type:'date',required:true}],d=>{const s=students.find(x=>x.id===Number(d.studentId));if(s)s.status=d.status;toast('Payment record updated for '+(s?s.name:'student'));renderAll()})};
+$('#materialClass').onchange=renderMaterials;$('#materialSubject').onchange=renderMaterials;
+$('#addMaterialBtn').onclick=()=>openModal('Add study material','Add a PDF or resource link. The file itself stays on its host.',[{label:'Resource title',name:'title',placeholder:'Chapter notes',required:true},{label:'Class',name:'cls',options:classes().map(c=>({value:c,label:c}))},{label:'Subject',name:'subject',options:['Mathematics','Science','English','Hindi','Social Science','Computer','Other']},{label:'Type',name:'kind',options:['Notes','Worksheet','Homework','Practice']},{label:'Resource URL (optional)',name:'url',placeholder:'https://…',full:true}],d=>{materials.push({id:nextId(),title:d.title.trim(),cls:d.cls,subject:d.subject,kind:d.kind,url:d.url.trim()});renderAll()});
+$('#addTestBtn').onclick=()=>{if(!students.length){toast('Add a student first.');return}openModal('Add test result','Record marks scored by a student.',[{label:'Student',name:'studentId',options:students.map(s=>({value:s.id,label:s.name+' — '+s.cls}))},{label:'Test / subject',name:'subject',placeholder:'Mathematics unit test',required:true},{label:'Marks obtained',name:'marks',type:'number',min:0,step:1,required:true},{label:'Total marks',name:'total',type:'number',min:1,step:1,required:true},{label:'Test date',name:'date',type:'date',required:true}],d=>{const marks=Number(d.marks),total=Number(d.total);if(marks>total){toast('Marks obtained cannot exceed total marks.');return}tests.push({id:nextId(),studentId:Number(d.studentId),subject:d.subject.trim(),marks,total,date:d.date});renderAll()})};
+renderAll();
+</script>
+</body></html>
